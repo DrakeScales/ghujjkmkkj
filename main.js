@@ -37,7 +37,7 @@ function my_keydown(e)
 		document.getElementById("d1").innerHTML ="You pressed a number key";
 		console.log("number key")
 	}
-	else if((keyPressed = 17) || (keyPressed = 18)|| (keyPressed = 27)){
+	else if((keyPressed == 17) || (keyPressed == 18)|| (keyPressed == 27)){
 		specialkey();
 		document.getElementById("d1").innerHTML ="You pressed a special key";
 		console.log("special key")
@@ -50,6 +50,7 @@ function my_keydown(e)
 	else{
 		otherkey();
 		document.getElementById("d1").innerHTML="You pressed a symbol or other key";
+		console.log("other key")
 	}
 }
 
